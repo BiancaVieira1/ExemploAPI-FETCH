@@ -71,6 +71,6 @@ window.onload = function(){
   function limparCampos(){
       nome.value = "";
       curso.value = "";
+      
     };
-
 };
