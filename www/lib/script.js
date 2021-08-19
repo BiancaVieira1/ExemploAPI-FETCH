@@ -38,7 +38,7 @@ window.onload = function(){
         curso.value = data['curso'];
      })
     })
-  })
+  });
 
    alterar.addEventListener("click", function(){
       fetch(`https://www.jussimarleal.com.br/exemplo_api/pessoa/${id.value}`, {
