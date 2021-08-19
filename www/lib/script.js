@@ -7,6 +7,8 @@ window.onload = function(){
   const alterar = document.querySelector("#alterar");
   const deletar = document.querySelector("#deletar");
 
+
+
   cadastrar.addEventListener("click", function(){
     let formdata = new FormData();
     formdata.append('nome', `${nome.value}`);
@@ -26,7 +28,7 @@ window.onload = function(){
   });
 
   buscar.addEventListener("click", function(){
-    fetch(`https://www.jussimarleal.com.br/exemplo_api/pessoa/${id.value}`, {
+    fetch(`https://www.jussimarleal.com.br/exemplo_api/pessoa/${id.value}`,{
        method:"get",
        mode:'cors',
        cache:'default'
@@ -35,8 +37,8 @@ window.onload = function(){
         nome.value = data['nome'];
         curso.value = data['curso'];
      })
-    });
-  });
+    })
+  })
 
    alterar.addEventListener("click", function(){
       fetch(`https://www.jussimarleal.com.br/exemplo_api/pessoa/${id.value}`, {
@@ -72,5 +74,6 @@ window.onload = function(){
       nome.value = "";
       curso.value = "";
       
-    };
-};
+    }
+}
+
