@@ -53,8 +53,7 @@ window.onload = function(){
          'curso':`${curso.value}`
        })
     }).then(()=>{
-
-      alert("Registro Alterado com Sucesso")
+      alert("Registro Alterado com Sucesso");
        limparCampos();
     }); 
    });
@@ -65,7 +64,7 @@ window.onload = function(){
        mode:'cors',
        cache:'default'
       }).then(()=>{
-        alert("Registro Deletado com Sucesso!")
+        alert("Registro Deletado com Sucesso!");
         limparCampos();
       });
   });
